@@ -7,48 +7,45 @@
 </head>
 
 <body>
-    <div>
-        <div class="bd-example">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h4 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Campaign 1
-                        </button>
-                    </h4>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div id="campaigns-data-placeholder"></div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h4 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Campaign 2
-                        </button>
-                    </h4>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div id="campaigns-data-placeholder"></div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h4 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Campaign 3
-                        </button>
-                    </h4>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div id="campaigns-data-placeholder"></div>
-                    </div>
-                </div>
+<!-- Headers -->
+<div class="container-fluid">
+    <div class="row align-items-center bg-light">
+        <div class="col-md-2"></div>
+        <div class="col-md-2 text-center">Campaign</div>
+        <div class="col-md-2 text-center">Region</div>
+        <div class="col-md-2 text-center">Completion</div>
+        <div class="col-md-2 text-center">Actions</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 d-flex align-items-center" style="background-color: #ddd;">
+            This content spans multiple rows
+        </div>
+        <div class="col-md-2 d-flex align-items-center justify-content-center">
+            Content for Campaign
+        </div>
+        <div class="col-md-2 d-flex align-items-center justify-content-center">
+            Content for Region
+        </div>
+        <div class="col-md-2 d-flex align-items-center justify-content-center">
+            <!-- Progress bar for Completion -->
+            <div class="progress w-100">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
             </div>
         </div>
+        <div class="col-md-2 d-flex align-items-center justify-content-center">
+            Content for Actions
+        </div>
     </div>
+
+    <div class="w-100"></div> 
+
+    <!-- Repeat the above row structure for more rows of data... -->
+</div>
+
+    
+    
+
 </body>
 
 </html>
